@@ -1,0 +1,121 @@
+
+/* Elemental Selectors */
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color:gray;
+  margin:0;
+}
+
+a {
+  text-decoration: none; 
+  transition: color 0.5s;
+}
+
+a:hover {
+  color:red;
+}
+
+/* Main Div Styling */
+
+main {
+  max-width:1440px;  
+  max-height:800px;
+  border:1px solid black;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  overflow: scroll;
+}
+
+
+/* Aside Info */
+
+#AboutMe {
+  position: relative;
+  max-height: 800px;
+}
+
+#AboutMe aside {
+  width:200px;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height:100%;
+}
+
+#AboutMe aside ul {
+  width:100%;
+  padding:0;
+  /* border-bottom: 1px solid grey; */
+  height: 100%;
+}
+
+#AboutMe aside ul li {
+  /* border-top: 1px solid gray; */
+  /* border-bottom: 1px solid gray; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+aside li i {
+  font-size: 20px;
+}
+
+aside img {
+  width:175px;
+  height:175px;
+  padding-bottom:15px;
+
+}
+
+#languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* Navigation */
+
+nav {
+  padding-top:10px;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+/* Main Content */
+
+nav article {
+  padding: 30px;
+  /* max-height:100%; */
+  overflow: scroll;
+}
+
+/* Icon Styling */
+
+.fa-js { color:lightgreen; }
+.fa-php { color:purple; }
+.fa-python { color:blue; }
+.fa-database { color:darkcyan; }
+.fa-github { color: black; }
+.fa-map-marker { color: darkgray; }
+.fa-cross { color: black; }
+.fa-hat-cowboy-side { color:brown; }
+
+.fa-terminal {
+  color: black;
+  font-size: 16px;
+}

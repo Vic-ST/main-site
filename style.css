@@ -215,7 +215,7 @@ header .menuicon div {
   /* display: none; */
   z-index: 9;
   background-color:lightgray;
-  position: absolute;
+  position: fixed;
   transition: top 0.5s;
 }
 

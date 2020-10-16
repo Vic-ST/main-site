@@ -43,7 +43,7 @@ header img {
   position: relative;
 }
 
-header section {
+header .heading {
   position: absolute;
   z-index: 4;
   font-size: 40px;
@@ -54,14 +54,14 @@ header section {
   transform: translate(-50%, -50%);
 }
 
-header section h1 {
+header .heading h1 {
   font-weight:300;
   text-align: center;
 }
 
 /************ Header Nav **************/
 
-header nav {
+#desktopnav {
   position: fixed;
   width:100%;
   z-index: 10;
@@ -72,7 +72,7 @@ header nav {
   box-shadow: 0px 1px 10px gray;
 }
 
-header nav ul {
+#desktopnav ul {
   display: flex;
   text-align: center;
   grid-gap: 75px;
@@ -81,16 +81,12 @@ header nav ul {
   z-index: 10;
 }
 
-header nav ul li {
+#desktopnav ul li {
   list-style-type: none;
 }
 
-#mobilenav {
-  display: none;
-}
-
 @media (max-width:700px) {
-  header nav {
+  #desktopnav {
     display: none;
   }
 }
@@ -181,6 +177,71 @@ main .threecol section {
   margin-right: 20px;
   color:gray;
 } */
+
+/************ Mobile Menu **************/
+
+.menuicon {
+  display: inline-block;
+  cursor: pointer;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+header .menuicon {
+  left:-100%;
+  transition: 0.5s;
+}
+
+header .menuicon div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#mobilenav {
+  height:100%;
+  width:100%;
+  /* display: none; */
+  z-index: 9;
+  background-color:lightgray;
+  position: absolute;
+  transition: top 0.5s;
+}
+
+#mobilenav ul {
+  display:flex;
+  flex-direction: column;
+  grid-gap:20px;
+  padding:10px;
+  margin-top:50px;
+}
+
+#mobilenav ul li { list-style-type: none; }
+
+@media (max-width: 700px) {
+  header .menuicon {
+    left:0;
+    position: fixed;
+    z-index:10;
+    padding:10px;
+  }
+}
+
+@media (min-width:700px) {
+  header #mobilenav { display:none; }
+  header .menuicon { display: none; }
+}
 
 /************** Footer **************/
 footer {

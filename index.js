@@ -1,0 +1,15 @@
+const express = require('express')
+const app = express()
+const port = 8000
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/static/index.html")
+})
+
+app.get("/css/style.css", (req, res) => {
+  res.sendFile(__dirname + "/static/css/style.css")
+})
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`)
+})

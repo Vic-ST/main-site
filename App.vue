@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/style.css">
-  <title>Home</title>
-</head>
-<body>
+<template>
   <nav>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -157,32 +149,32 @@
     </div>
     <div>
     <div class="image-gallery-grid">
-      <img src="gallery/beach.jpg" alt="Beach" class="sm-gallery">
-      <img src="gallery/boatwindow.jpg" alt="Boat Window" class="md-gallery">
-      <img src="gallery/capitol.jpg" alt="Capitol" class="lg-gallery">
-      <img src="gallery/citytraffic.jpg" alt="City Traffic" class="sm-gallery">
-      <img src="gallery/cowboy.jpg" alt="Cowboy" class="sm-gallery">
-      <img src="gallery/motorcycle2.jpg" alt="Motorcycle 2" class="lg-gallery">
-      <img src="gallery/drummer.jpg" alt="Drummer" class="md-gallery">
-      <img src="gallery/drummer2.jpg" alt="Drummer 2" class="md-gallery">
-      <img src="gallery/girl.jpg" alt="Girl" class="sm-gallery">
-      <img src="gallery/girl2.jpg" alt="Girl 2" class="lg-gallery">
-      <img src="gallery/gorge.jpg" alt="Gorge" class="sm-gallery">
-      <img src="gallery/guitar.jpg" alt="Guitar" class="md-gallery">
-      <img src="gallery/housewater.jpg" alt="House Water" class="lg-gallery">
-      <img src="gallery/lifeguard.jpg" alt="Lifeguard" class="sm-gallery">
-      <img src="gallery/motorcycle.jpg" alt="Motorcycle" class="lg-gallery">
-      <img src="gallery/mountains.jpg" alt="Mountains" class="lg-gallery">
-      <img src="gallery/iceskating.jpg" alt="Ice Skating" class="lg-gallery">
-      <img src="gallery/planes.jpg" alt="Planes" class="sm-gallery">
-      <img src="gallery/soccer.jpg" alt="Soccer" class="sm-gallery">
-      <img src="gallery/statueofliberty.jpg" alt="Statue of Liberty" class="lg-gallery">
-      <img src="gallery/trees.jpg" alt="Trees" class="sm-gallery">
-      <img src="gallery/trees2.jpg" alt="Trees 2" class="sm-gallery">
-      <img src="gallery/band.jpg" alt="Band" class="sm-gallery">
-      <img src="gallery/buildings.jpg" alt="Buildings" class="sm-gallery">
-      <img src="gallery/crosswalk.jpg" alt="Crosswalk" class="sm-gallery">
-      <img src="gallery/guitarplayer.jpg" alt="Guitar Player" class="sm-gallery">
+      <img src="/gallery/beach.jpg" alt="Beach" class="sm-gallery">
+      <img src="/gallery/boatwindow.jpg" alt="Boat Window" class="md-gallery">
+      <img src="/gallery/capitol.jpg" alt="Capitol" class="lg-gallery">
+      <img src="/gallery/citytraffic.jpg" alt="City Traffic" class="sm-gallery">
+      <img src="/gallery/cowboy.jpg" alt="Cowboy" class="sm-gallery">
+      <img src="/gallery/motorcycle2.jpg" alt="Motorcycle 2" class="lg-gallery">
+      <img src="/gallery/drummer.jpg" alt="Drummer" class="md-gallery">
+      <img src="/gallery/drummer2.jpg" alt="Drummer 2" class="md-gallery">
+      <img src="/gallery/girl.jpg" alt="Girl" class="sm-gallery">
+      <img src="/gallery/girl2.jpg" alt="Girl 2" class="lg-gallery">
+      <img src="/gallery/gorge.jpg" alt="Gorge" class="sm-gallery">
+      <img src="/gallery/guitar.jpg" alt="Guitar" class="md-gallery">
+      <img src="/gallery/housewater.jpg" alt="House Water" class="lg-gallery">
+      <img src="/gallery/lifeguard.jpg" alt="Lifeguard" class="sm-gallery">
+      <img src="/gallery/motorcycle.jpg" alt="Motorcycle" class="lg-gallery">
+      <img src="/gallery/mountains.jpg" alt="Mountains" class="lg-gallery">
+      <img src="/gallery/iceskating.jpg" alt="Ice Skating" class="lg-gallery">
+      <img src="/gallery/planes.jpg" alt="Planes" class="sm-gallery">
+      <img src="/gallery/soccer.jpg" alt="Soccer" class="sm-gallery">
+      <img src="/gallery/statueofliberty.jpg" alt="Statue of Liberty" class="lg-gallery">
+      <img src="/gallery/trees.jpg" alt="Trees" class="sm-gallery">
+      <img src="/gallery/trees2.jpg" alt="Trees 2" class="sm-gallery">
+      <img src="/gallery/band.jpg" alt="Band" class="sm-gallery">
+      <img src="/gallery/buildings.jpg" alt="Buildings" class="sm-gallery">
+      <img src="/gallery/crosswalk.jpg" alt="Crosswalk" class="sm-gallery">
+      <img src="/gallery/guitarplayer.jpg" alt="Guitar Player" class="sm-gallery">
     </div>
     </div>
   </main>
@@ -198,6 +190,4 @@
 
     <p>&copy; 2026 Steven Copeland. All rights reserved.</p>
   </footer>
-
-</body>
-</html>
+</template>

@@ -7,8 +7,151 @@
   <title>Home</title>
 </head>
 <body>
-  <header>
-    <h1>Hello World</h1>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="home">
+    <header>
+      <p>Hi, I'm Steven, a Software Engineer currently at <br> <a href="https://www.cargosense.com" target="_blank">CargoSense</a>. I like building and maintaining <br> products that work well.</p>
+
+    </header>
+
+    <aside class="main-aside">
+      <div class="profile-container">
+        <div id="mainProfileImage">
+          <img src="/headshot.jpg" alt="Profile Photo" />
+        </div>
+        
+      </div>
+      
+    </aside>
+  </main>
+
+
+  <main>
+
+    <section id="about">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I am a Software Engineer who loves developing new products and maintaining old ones. I have a passion for full stack development as it allows me to work both sides of the application. On my off days, I love snowboarding, photography, fixing my car, and practicing leetcode easys.</p>
+      </div>
+      <div class="image-grid">
+        <div>
+          <img src="/ambulance.jpg" alt="About Image 1" />
+          <p>The ambulance me and my friends purchased for our adventures.</p>
+        </div>
+        <div>
+          <img src="/car.jpg" alt="About Image 2" />
+          <p>My car shortly having the transmission dropped for the first time.</p>
+        </div>
+        <div>
+          <img src="/snow.jpg" alt="About Image 3" />
+          <p>The view from the top of Wintergreen Ski Resort</p>
+        </div>
+      
+      </div>
+    </section>
+  </main>
+
+  <main>
+
+    <section id="experience">
+      <div class="experience-header">
+        <h2>Timeline</h2>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-item">
+          <div class="experience-marker"></div>
+
+
+          <div class="experience-content">
+            <h3>Volunteer Developer, Presenter, Writer @ <a href="https://www.instagram.com/regentuniversityenactus/" target="_blank">Regent University Enactus</a></h3>
+            <span class="experience-date">Aug 2025 - Present</span>
+            
+            <ul>
+              <li>Collaborated with team to write, present, and research our “Break the Cycle” project, a program dedicated to help ex-convicts find employment after time served</li>
+              <li>Built and designed  a custom full stack application using Next.js, PostgreSQL, and DigitalOcean to build, test, and deploy a secure, reliable website.</li>
+              <li>Implemented a custom api and database to allow for full functionality and powerful integration directly from the companies interested.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-marker"></div>
+
+
+          <div class="experience-content">
+            <h3>Software Engineer Intern @ <a href="https://www.cargosense.com" target="_blank">CargoSense</a></h3>
+            <span class="experience-date">May 2024 - Present</span>
+            
+            <ul>
+              <li>Built a dynamic form builder in Vue.js using JSON Schema for full UI generation</li>
+              <li>Styled interfaces with Tailwind CSS; tested using Vitest and Babel Istanbul for full coverage</li>
+              <li>Wrote full documentation to support onboarding and future development</li>
+              <li>Built the company design system using LitElement and published it using npm. Designed and wrote a documentation site from scratch using Next.js.</li>
+              <li>Facilitated implementation of the system into legacy products and all new products use it.</li>
+              <li>Wrote tests, reduced redundancy, and debugged code using Ruby on Rails and ActiveRecord</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-marker"></div>
+
+          <div class="experience-content">
+            <h3>Web Developer @ <a href="https://www.gunowners.org" target="_blank">Gun Owners of America</a></h3>
+            <span class="experience-date">June 2020 - May 2023</span>
+          
+            <ul>
+              <li>Worked as a Web Developer at Gun Owners of America, building and maintaining the organization's main website using PHP, HTML/CSS, JavaScript, jQuery, and WordPress</li>
+              <li>Developed custom WordPress plugins tailored to organizational needs, enhancing site functionality and member engagement</li>
+              <li>Rewrote the entire WordPress site from scratch, improving performance, security, and maintainability</li>
+              <li>Built and launched four additional WordPress sites for state-specific branches to support localized outreach</li>
+              <li>Wrote Python scripts for analyzing member data and geolocating storefronts, supporting data-driven decision-making and operational planning</li>
+            </ul>
+          </div>
+
+        </div>
+        
+        <div class="experience-item">
+          <div class="experience-marker-flex">
+          <div class="last-experience-marker">
+
+          </div>
+          <div class="end-experience-marker"></div>
+          </div>
+
+
+
+          <div class="experience-content">
+            <h3>Volunteer Online Content Moderator @ <a href="https://www.codecademy.com" target="_blank">Codecademy</a></h3>
+            <span class="experience-date">May 2016 - Dec 2022</span>
+
+            
+            <ul>
+              <li>Helped lead a moderation team for the Codecademy community across forums, Discord, and Reddit, ensuring a safe and respectful environment for over 3.5 million MAUs</li>
+              <li>Actively answered user questions and provided technical guidance to support learners and foster engagement</li>
+              <li>Co-developed a custom moderation bot from scratch to handle bans, mutes, and kicks within Discord with over 100,000 users, eliminating reliance on third-party tools</li>
+              <li>Built internal tools and automations to streamline team workflows and improve moderation efficiency</li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
 </body>
 </html>

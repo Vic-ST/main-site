@@ -6,7 +6,7 @@ html, body {
   top: 0;
   font-family: 'Lato', Arial, sans-serif;
   /* background-color: #f8f8f8; */
-  background-color: #fffff7;
+  background-color: #fffff1;
   height: 100%;
 }
 
@@ -50,13 +50,15 @@ nav {
   height:90px;
   position: fixed;
   background-color: #fffff7;
+  z-index: 10;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  padding: 0 100px;
-  height:100%;
+  padding: 0 80px;
+  min-height:100%;
+  flex-grow: 1;
 }
 
 main header {
@@ -144,7 +146,18 @@ p a {
     font-style: italic;
   }
 }
+@media (max-width: 768px) {
+  #experience, #about, #photos {
+    /* display: block; */
+    margin: 0;
+    padding: 10px;
+    min-height: 100%;
+  }
 
+  #about section, #photos section, #experience section {
+    min-height: 100%;
+  }
+}
 .experience-grid {
   a {
     color: #0073e6;
@@ -259,4 +272,60 @@ p a {
 .experience-item:hover .experience-marker::before,
 .experience-item:hover .last-experience-marker::before {
   background-color: #fffff7;
+}
+
+.image-gallery-grid {
+  display: grid;
+	grid-gap: 4px;
+  grid-template-columns: repeat(10, 150px);
+  grid-template-rows: repeat(7, 150px);
+  grid-auto-flow: dense;
+  border:5px solid white;
+}
+
+.image-gallery-grid:is(:nth-child(3), :nth-child(5), :nth-child(8), :nth-child(12), :nth-child(17)) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.image-gallery-grid img {
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  display: block;
+  border:2px solid white;
+}
+
+.sm-gallery {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.md-gallery {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.lg-gallery {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+#photos {
+  flex-direction: column;
+}
+  
+
+footer {
+  height:200px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
 }

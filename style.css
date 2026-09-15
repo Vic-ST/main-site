@@ -8,6 +8,8 @@ html, body {
   /* background-color: #f8f8f8; */
   background-color: #fffff1;
   height: 100%;
+  width: 100%;
+  display: block;
 }
 
 @media not (prefers-reduced-motion: reduce) {
@@ -16,6 +18,8 @@ html, body {
     scroll-padding-top: 90px;
   }
 }
+
+
 
 header h1 {
   font-weight: 100 ;
@@ -32,19 +36,16 @@ nav ul {
   margin: 0;
   padding: 0;
   display:flex;
-  /* justify-content: space-between; */
   align-items: center;
-  /* width:40%; */
+  gap: 30px;
   margin-right:70px;
+  flex-grow:1;
+  justify-content: flex-end;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-} 
 
 nav {
-  width:100%;
+  min-width:100%;
   display: flex;
   justify-content: right;
   height:90px;
@@ -283,6 +284,23 @@ p a {
   border:5px solid white;
 }
 
+.image-gallery-grid img {
+  animation: reveal-on-scroll linear both;
+  animation-timeline: view();
+  animation-range: entry 20% entry 100%;
+}
+
+@keyframes reveal-on-scroll {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .image-gallery-grid:is(:nth-child(3), :nth-child(5), :nth-child(8), :nth-child(12), :nth-child(17)) {
   grid-column: span 3;
   grid-row: span 2;
@@ -328,4 +346,63 @@ footer {
 .footer-links {
   display: flex;
   gap: 15px;
+}
+
+@media (max-width: 768px) {
+  #home {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+
+  }
+
+  #mainProfileImage {
+    width: 100%;
+    height: auto;
+  }
+
+  nav {
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    height: 70px;
+    font-size: 14px;
+    width: 100% !important;
+  }
+
+  nav ul {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .image-gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 150px);
+  }
+
+  .image-gallery-grid  .sm-gallery {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .image-gallery-grid  .md-gallery {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .image-gallery-grid  .lg-gallery {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+
+  .last {
+    grid-column: span 3 !important;
+  }
+
 }

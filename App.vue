@@ -174,7 +174,7 @@
       <img src="/gallery/band.jpg" alt="Band" class="sm-gallery">
       <img src="/gallery/buildings.jpg" alt="Buildings" class="sm-gallery">
       <img src="/gallery/crosswalk.jpg" alt="Crosswalk" class="sm-gallery">
-      <img src="/gallery/guitarplayer.jpg" alt="Guitar Player" class="sm-gallery">
+      <img src="/gallery/guitarplayer.jpg" alt="Guitar Player" class="sm-gallery last">
     </div>
     </div>
   </main>
